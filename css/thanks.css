@@ -1,0 +1,42 @@
+.thanks h2{
+    padding-bottom: 32px;
+}
+
+.thanks p{
+    padding-bottom: 64px;
+}
+
+.thanks{
+    margin: 180px 0 240px 0;
+}
+
+.thanks .contact-tree{
+    bottom: -741px;
+}
+
+.thanks a {
+    display: flex;
+    justify-content: center;
+    text-decoration:none;
+    
+
+    width: 180px;
+    margin: 0 auto;
+    color: #534638;
+    background: #E0D0B3;
+    padding: 9px 24px;
+    transition: .3s;
+}
+
+.thanks a:hover {
+    background: #EDE6DB;
+    color: #B4AFA9;
+  }
+
+
+  /* スマホ */
+@media screen and (max-width: 808px) {
+    .thanks{
+        margin: 100px 0 120px 0;
+    }
+}

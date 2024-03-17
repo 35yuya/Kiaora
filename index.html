@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hairshop Kiaora</title>
+    <link rel="icon" href="img/kiaora_favicon.png" />
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -20,6 +21,18 @@
     <!-- スクロールしたらふわっ -->
     <link rel="stylesheet" type="text/css" href="css/fadeUp.css">
 </head>
+
+<script>
+    let submitted = false;
+</script>
+
+<iframe
+    name="hidden_iframe"
+    style="display: none"
+    onload="if(submitted){window.location='thanks.html';}"
+></iframe>
+
+
 
 <body>
     <div id="splash">
@@ -145,6 +158,8 @@
 
     <header id="header">
         <a href="#" id="page-top-header"><img src="img/logo.svg" alt="Website Logo"></a>
+
+        
         <nav class="nav">
             <ul id="page-link" class="gnavi">
                 <li><a href="#Concept">Concept</a></li>
@@ -152,7 +167,8 @@
                 <li><a href="#Menu">Menu</a></li>
                 <li><a href="#Contact">Contact</a></li>
                 <li><a href="#Access">Access</a></li>
-                <li><a href="https://www.facebook.com/hairshopkiaora/?locale=ja_JP"><i class="fab fa-facebook"></i></a>
+                <!-- <li><a href="https://www.facebook.com/hairshopkiaora/?locale=ja_JP"><i class="fab fa-facebook"></i></a> -->
+                    <li><a href="thanks.html"><i class="fab fa-facebook"></i></a>
                 </li>
             </ul>
         </nav>
@@ -188,11 +204,11 @@
                     この空間でたくさんの「こんにちは」「ありがとう」を交わしたい。<br class="pc">
                     小さなご縁を大切にしたい。<br class="pc">
                     そんな想いからKiaoraをスタートさせました。<br>
-                    <!-- <br class="tab"> -->
+                    <br class="sma">
                     忙しい日々の中、Kiaoraに来てくれたことで、<br class="pc">
                     ちょっぴり気持ちが軽くなったり、ちょっぴりワクワクする。<br class="pc">
                     そんなお手伝いができたら嬉しいです。<br>
-                    <!-- <br class="tab"> -->
+                    <br class="sma">
                     老若男女問わず、美容室ってリラックスできる場所。楽しい場所。<br class="pc">
                     そんな風に思ってもらえるように心掛けています。<br class="pc">
                     髪も心も軽やかに。一緒に楽しみましょう。
@@ -226,7 +242,7 @@
                         </span>
                     </span>
                     <span class="row-label"></span>
-                    美容師歴30年以上。妻、母、働く女性として、<br>
+                    美容師歴30年以上。妻、母、働く女性として、<br class="pc"><br class="tab">
                     ライフスタイルからヘアスタイルを提案。
                 </p>
             </div>
@@ -235,12 +251,11 @@
             <div class="contents box fadeUpTrigger">
                 <img src="img/Stylist_02.png" class="img-left sma">
                 <p class="text-left ">
-                    美容業30数年。主婦業、母業20数年。<br>
-                    女性として、母として、色んな目線で日常を<br>
-                    楽しく過ごせるお手伝いができると嬉しいです。<br>
-                    <br class="pc">
-                    <br class="tab">
-                    趣味はウォーキング、登山、水泳などなど。<br>
+                    美容業30数年。主婦業、母業20数年。<br class="pc"><br class="tab">
+                    女性として、母として、色んな目線で日常を<br class="pc"><br class="tab">
+                    楽しく過ごせるお手伝いができると嬉しいです。<br class="pc"><br class="tab">
+                    <br>
+                    趣味はウォーキング、登山、水泳などなど。<br class="pc"><br class="tab">
                     色々やりたいことが出てきちゃう。<br>
                 </p>
                 <img src="img/Stylist_02.png" class="img-right pc">
@@ -268,9 +283,9 @@
                     allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                     class="img-left-face sma"></iframe>
                 <p>
-                    FacebookではKiaoraのこと、<br>
-                    私の趣味のことなどをゆる～く更新しています。<br>
-                    いつ更新するのかな～？というくらいの<br>
+                    FacebookではKiaoraのこと、<br class="pc"><br class="tab">
+                    私の趣味のことなどをゆる～く更新しています。<br class="pc"><br class="tab">
+                    いつ更新するのかな～？というくらいの<br class="pc"><br class="tab">
                     気持ちで覗いてみてください。<br>
                 </p>
             </div>
@@ -454,8 +469,8 @@
             <div class="topBefore">
                 <div class="phone contents">
                     <h3 class="text-center">電話でのお問い合わせ</h3>
-                    <a href="tel:090-6878-XXXX">
-                        <h2 class="text-center">090-6878-XXXX</h2>
+                    <a href="tel:090-6878-6789">
+                        <h2 class="text-center">090-6878-6789</h2>
                     </a>
                 </div>
             </div>
@@ -465,11 +480,15 @@
             </div>
 
             <div class="topBefore">
-                <form id="form" action="php/contact.php" method="POST">
 
-                    <input id="name" type="text" placeholder="お名前" name="name">
-                    <input id="email" type="email" placeholder="メールアドレス" name="email">
-                    <textarea id="message" type="message" placeholder="お問い合わせ内容" name="message"></textarea>
+                <form id="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeLh_8KsUC5RB0bMh7ZFsua90IdfeklXl7DO9Us9oibGqleRQ/formResponse
+                " method="POST"
+                target="hidden_iframe"
+                onsubmit="submitted=true;">
+
+                    <input id="name" type="text" placeholder="お名前" name="entry.244916593">
+                    <input id="email" type="email" placeholder="メールアドレス" name="entry.1883814594">
+                    <textarea id="message" type="message" placeholder="お問い合わせ内容" name="entry.800934334"></textarea>
                     <p>※ご予約の場合は、予約希望日・予約希望時間・希望メニューを必ず記載してください。
                     </p>
                     <input id="submit" type="submit" value="送信する">
